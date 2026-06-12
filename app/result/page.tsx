@@ -323,9 +323,12 @@ export default function ResultPage() {
               더 길고 구체적인 해석을 제공합니다.
             </p>
 
-            <button className="w-full rounded-2xl bg-gradient-to-r from-yellow-400 to-yellow-600 px-8 py-4 text-black font-bold shadow-[0_0_30px_rgba(234,179,8,0.25)] hover:scale-[1.01] transition">
-              프리미엄 상세 리포트 열기 ₩9,900
-            </button>
+            <a
+  href="/premium"
+  className="block w-full rounded-2xl bg-gradient-to-r from-yellow-400 to-yellow-600 px-8 py-4 text-black font-bold shadow-[0_0_30px_rgba(234,179,8,0.25)] hover:scale-[1.01] transition"
+>
+  프리미엄 상세 리포트 열기 ₩9,900
+</a>
 
             <p className="text-center text-xs text-zinc-500 mt-4">
               결제 기능은 다음 단계에서 연결됩니다.
