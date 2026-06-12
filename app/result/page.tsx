@@ -147,12 +147,12 @@ export default function ResultPage() {
 
         <div className="mt-8 bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
           <h2 className="text-2xl font-bold mb-4">
-            AI 분석
+            프리미엄 사주 해석
           </h2>
 
           {loading ? (
             <p className="text-zinc-400">
-              🔮 사주를 분석하고 있습니다...
+              🔮 원국과 오행 흐름을 정밀 분석하고 있습니다.
             </p>
           ) : (
             <div className="text-zinc-300 leading-8 whitespace-pre-wrap">

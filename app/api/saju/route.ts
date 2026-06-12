@@ -74,10 +74,11 @@ export async function POST(req: Request) {
   const body = await req.json()
 
   const birth = body.birth
-  const time = body.time
+ const time = body.time
+const unknownTime = body.unknownTime
 
-  const [year, month, day] = birth.split("-").map(Number)
-  const [hour, minute] = time.split(":").map(Number)
+const [year, month, day] = birth.split("-").map(Number)
+const [hour, minute] = unknownTime ? [12, 0] : time.split(":").map(Number)
 
   const solar = Solar.fromYmdHms(
     year,
@@ -123,7 +124,7 @@ export async function POST(req: Request) {
           role: "user",
           content: `
 생년월일: ${birth}
-태어난 시간: ${time}
+태어난 시간: ${unknownTime ? "모름, 정오 기준으로 임시 분석" : time}
 성별: ${body.gender}
 
 년주: ${yearGanZhi}
