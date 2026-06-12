@@ -66,11 +66,11 @@ export default function ResultPage() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <p className="text-yellow-500 tracking-[0.35em] text-sm mb-4">
-            FREE PREVIEW REPORT
+            PERSONAL SAJU INSIGHT
           </p>
 
           <h1 className="text-5xl font-bold mb-5">
-            사주 리포트 미리보기
+            나의 사주 인사이트
           </h1>
 
           <p className="text-zinc-400 leading-7">
@@ -172,14 +172,14 @@ export default function ResultPage() {
 
         <div className="mt-8 bg-white/[0.04] backdrop-blur-xl border border-yellow-500/20 rounded-3xl p-6 shadow-[0_0_50px_rgba(234,179,8,0.06)]">
           <h2 className="text-2xl font-bold mb-4 text-yellow-400">
-            무료 미리보기 해석
+            핵심 운세 인사이트
           </h2>
 
           {loading ? (
             <div className="space-y-3 text-zinc-400">
               <p>🔮 사주 원국을 계산하고 있습니다...</p>
               <p>☯️ 오행의 균형을 분석하고 있습니다...</p>
-              <p>✨ 무료 리포트를 작성하고 있습니다...</p>
+              <p>✨ 맞춤 인사이트를 정리하고 있습니다...</p>
             </div>
           ) : (
             <div className="text-zinc-200 leading-9 whitespace-pre-wrap">

@@ -117,7 +117,7 @@ export async function POST(req: Request) {
         content: `
 너는 대한민국 최고 수준의 명리학자이자 프리미엄 사주 리포트 작성 전문가다.
 
-이번 응답은 "무료 미리보기 리포트"다.
+이번 응답은 "핵심 인사이트 리포트"다.
 전체 상세 리포트를 다 보여주면 안 된다.
 
 목표:
@@ -180,7 +180,7 @@ export async function POST(req: Request) {
 금: ${elements.percentages.금}%
 수: ${elements.percentages.수}%
 
-이 정보를 바탕으로 무료 미리보기 리포트를 작성해줘.
+이 정보를 바탕으로 핵심 인사이트 리포트를 작성해줘.
 `,
       },
     ],
